@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <title>
+        Carnegie Hall CHart
+    </title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    />
+
+    <!-- Styles -->
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    />
+</head>
+
+<body>
+    <div class="page">
+        <div class="contain">
+            <div class="sources"></div>
+            <div class="freqs"></div>
+            <div class="keys"></div>
+            <div class="fifths"></div>
+            <div class="inters"></div>
+            <div class="staff"></div>
+            <div class="title">
+                <span class="title__heading">The Carnegie Hall Chart</span>
+                <span>Based on the 1941 chart by E.J. Quinby</span>
+                <span>u/niallains</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button onclick="
+            document.body.classList.add('zoomed');
+            print();
+        ">
+            Print
+        </button>
+        <button class="controls__zoom" onclick="document.body.classList.toggle('zoomed')">
+            <span>Full size</span>
+            <span>Fit screen</span>
+        </button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
