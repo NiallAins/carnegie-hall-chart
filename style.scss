@@ -210,12 +210,15 @@ u {
     text-underline-offset: $w-underline-offset;
 }
 
-button {
+.button {
     padding: #{ $controls-f-size * 0.5 } $controls-f-size;
     border: $controls-w-border solid $c-fg;
     border-radius: $controls-f-size;
     font-size: $controls-f-size;
     background-color: $c-bg;
+    text-decoration: none;
+    color: inherit;
+    font-family: $f-face;
     cursor: pointer;
 
     &:hover {
@@ -226,7 +229,7 @@ button {
 .symbol {
     &__flat {
         display: inline-block;
-        margin: 0 #{ $w-pad-xs * -1 };
+        margin: 0 -1px;
     }
 }
 

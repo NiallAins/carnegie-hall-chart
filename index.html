@@ -4,7 +4,7 @@
 <head>
     <!-- Meta -->
     <title>
-        Carnegie Hall CHart
+        Carnegie Hall Chart
     </title>
     <meta
         name="viewport"
@@ -30,19 +30,23 @@
             <div class="title">
                 <span class="title__heading">The Carnegie Hall Chart</span>
                 <span>Based on the 1941 chart by E.J. Quinby</span>
-                <span>u/niallains</span>
+                <span>nialldesign.dev</span>
             </div>
         </div>
     </div>
 
     <div class="controls">
-        <button onclick="
-            document.body.classList.add('zoomed');
-            print();
-        ">
-            Print
-        </button>
-        <button class="controls__zoom" onclick="document.body.classList.toggle('zoomed')">
+        <a
+            class="button"
+            href="./carnegie-hall-chart.png"
+            download="./carnegie-hall-chart.png"
+        >
+            Save image
+        </a>
+        <button
+            class="button controls__zoom"
+            onclick="document.body.classList.toggle('zoomed')"
+        >
             <span>Full size</span>
             <span>Fit screen</span>
         </button>

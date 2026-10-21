@@ -100,21 +100,24 @@ u {
   text-underline-offset: 3px;
 }
 
-button {
+.button {
   padding: 9px 18px;
   border: 1px solid #141414;
   border-radius: 18px;
   font-size: 18px;
   background-color: #fff;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Noto Serif", Helvetica, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.button:hover {
   background-color: #eee;
 }
 
 .symbol__flat {
   display: inline-block;
-  margin: 0 -4px;
+  margin: 0 -1px;
 }
 
 .sources {
